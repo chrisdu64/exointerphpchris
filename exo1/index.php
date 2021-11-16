@@ -11,7 +11,7 @@ if(in_array('',$_POST)){
     $city = htmlspecialchars($_POST['city']);
     $postcode = htmlspecialchars($_POST['postcode']);
 
-    
+}
 ?>
 
 
@@ -64,7 +64,7 @@ if(in_array('',$_POST)){
 </div>
 
 <?php
-echo ('<div>
+echo "<div>
 <ul>
     <li>$lastname</li>
     <li>$firstname</li>
@@ -73,8 +73,7 @@ echo ('<div>
     <li>$city</li>
     <li>$postcode</li>
     </ul>
-</div>')
-}
+</div> ";
 ?>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
