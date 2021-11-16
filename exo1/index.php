@@ -1,6 +1,7 @@
 <?php
 
-if(in_array('',$_POST)){
+if(!empty($_POST)){
+  if(in_array('',$_POST)){
     echo('tous les champs doivent etre remplis');
     exit();
 } else{
@@ -11,7 +12,7 @@ if(in_array('',$_POST)){
     $city = htmlspecialchars($_POST['city']);
     $postcode = htmlspecialchars($_POST['postcode']);
 
-}
+}}
 ?>
 
 
