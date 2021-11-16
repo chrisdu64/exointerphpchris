@@ -1,7 +1,11 @@
 <?php
 
-// $auth = true;
-require "config.php";
+session_start();
+
+    if (isset($_GET['logout'])) {
+        session_destroy();
+        header('Location:index.php?success=disconnect');
+    }
 
 $alert = false;
 
@@ -34,7 +38,7 @@ if (isset($_GET["error"])) {
 <body>
     
 <?php
-if($user){
+if(!empty($_SESSION)){
 echo"<pre>";
 var_dump($_SESSION);
 echo"</pre>";
@@ -42,8 +46,9 @@ echo"</pre>";
 
 <div class="container bg-success">
     <h1>Bienvenue <?= $_SESSION['user'] ?></h1>
+    <a href="?logout">Déconnection</a>
 </div>
-<a href="deconnexion.php">Déconnexion</a>
+
 
 <?php
 } else {
