@@ -1,0 +1,11 @@
+DROP DATABASE IF EXISTS transports;
+CREATE DATABASE transports CHARACTER SET utf8;
+USE transports;
+
+CREATE TABLE lignes (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    lign VARCHAR (50) NOT NULL,
+    terminus1 VARCHAR (255) NOT NULL,
+    terminus2 VARCHAR (255) NOT NULL    
+);
+
