@@ -4,7 +4,7 @@
 if(!empty($_POST)){
     if(empty($_POST['marque']) || empty($_POST['couleur']) || empty($_POST['km']) || empty($_POST['carburant']) || empty($_POST['year'])
      || empty($_POST['price'])){
-        echo('tous les champs doivent etre remplis');
+        header('Location:index.php?error=missingInput');
         exit();
      } else {
          echo "texte";

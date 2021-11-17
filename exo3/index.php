@@ -1,5 +1,6 @@
 <?php
 include_once "../_navbar.php";
+include_once "../_errors.php";
 
 session_start();
 
@@ -8,27 +9,16 @@ session_start();
         header('Location:index.php?success=disconnect');
     }
 
-$alert = false;
-
-if (isset($_GET["error"])) {
-    $alert = true;
-    if ($_GET['error'] == "missingInput") {
-        $type = "secondary";
-        $message = "Les deux champs sont requis";
-    }
-    
-    if ($_GET['error'] == "differentPasswords") {
-        $type = "warning";
-        $message = "Les mots de passe ne concordent pas";
-    }
-}
 ?>
 
 
 
 <main>
 <h1>Exercice 3 :</h1>
+
 <?php
+include_once "../_errors-messages.php";
+
 if(!empty($_SESSION)){
 echo"<pre>";
 var_dump($_SESSION);

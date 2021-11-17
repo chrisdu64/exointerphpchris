@@ -1,9 +1,14 @@
 <?php
 include_once "../_navbar.php";
+include_once "../_errors.php";
 ?>
 
 <main>
 <h1>Exercice 2 :</h1>
+
+<?php
+include_once "../_errors-messages.php";
+?>
     
 <div class="container">
 <form action="index_post.php" method="POST" >

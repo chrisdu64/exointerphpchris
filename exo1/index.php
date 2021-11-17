@@ -1,10 +1,11 @@
 <?php
 
 include_once "../_navbar.php";
+include_once "../_errors.php";
 
 if(!empty($_POST)){
   if(in_array('',$_POST)){
-    echo('tous les champs doivent etre remplis');
+    header('Location:index.php?error=missingInput');
     exit();
 } else{
     $lastname = htmlspecialchars($_POST['lastname']);
@@ -19,6 +20,10 @@ if(!empty($_POST)){
 
 <main>
   <h1>Exercice 1 :</h1>
+
+<?php
+include_once "../_errors-messages.php";
+?> 
     
 <div class="container">
 <form action="" method="POST" >
