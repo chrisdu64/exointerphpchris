@@ -14,12 +14,20 @@ if (isset($_GET["error"])) {
         $type = "warning";
         $message = "Pas assez long";
     }
+    if ($_GET['error'] == "unknownError") {
+        $type = "warning";
+        $message = "Attention contactez votre administrateur une grave erreur est survenue";
+    }
 }
 if (isset($_GET['success'])) {
     $alert = true;
     if ($_GET['success'] == "disconnect") {
         $type = 'success';
         $message = 'Vous êtes déconnectés';
+    }
+    if ($_GET['success'] == "addedLigne") {
+        $type = 'success';
+        $message = 'Nouvelle ligne créée';
     }
   }
 
