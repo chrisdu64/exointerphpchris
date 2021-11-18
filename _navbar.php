@@ -34,6 +34,18 @@
         <li class="nav-item">
           <a class="nav-link" href="../exo5/">Exo 5</a>
         </li>        
+        <li class="nav-item">
+          <a class="nav-link" href="../exo6/">Exo 6</a>
+        </li>        
+        <li class="nav-item">
+          <a class="nav-link" href="../exo7/">Exo 7</a>
+        </li>        
+        <li class="nav-item">
+          <a class="nav-link" href="../exo8/">Exo 8</a>
+        </li>        
+        <li class="nav-item">
+          <a class="nav-link" href="../exo9/">Exo 9</a>
+        </li>        
       </ul>     
     </div>
   </div>

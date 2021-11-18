@@ -1,12 +1,10 @@
 <?php
-$auth = true;
-require "../exo7/connexion.php";
+
 include_once "../_navbar.php";
 include_once "../_errors.php";
+include_once "_view-lignes.php";
 
-$viewLignes = 'SELECT * from lignes';
-$reqViewLignes = $connexion->query($viewLignes);
-$lignes = $reqViewLignes->fetchAll();
+
 
 ?>
 
@@ -32,19 +30,20 @@ foreach($lignes as $ligne){
         <p class="text-bold">Description :</p>
         <p>Terminus A de la ligne : <?php echo $ligne['terminus1']; ?>.</p>
         <p>Terminus B de la ligne : <?php echo $ligne['terminus2'];?>.</p>
-        <hr>
-        
+        <hr>        
         <div class="d-flex justify-content-between">
-        <a href="#" class="btn btn-success ">Modifier la ligne</a>            
-        <a href="modifier-lignes.php" class="btn btn-info ">Supprimer la ligne</a>
+        <a href="modifier-lignes.php" class="btn btn-success ">Modifier la ligne</a>            
+        <a href="suppr-lignes.php" class="btn btn-info ">Supprimer la ligne</a>
         </div>     
   </div>
 
 
 <?php
 }
-include_once "../_footer.php";
 ?>
 </body>
+<?php
+include_once "../_footer.php";
+?>
 
 </html>
