@@ -40,7 +40,9 @@ include_once "../_errors-messages.php";
             
             <input type="hidden" name="id" value="<?php echo $ligne['lign_id']; ?>">
             <button type="submit" class="btn btn-warning col-2">Modifier l'annonce</button>
+            
         </form>
+        <a class="nav-link" class="btn btn-warning col-2" href="../exo8/">Annuler la modification</a>
     </div>
 <?php
 include_once "../_footer.php";

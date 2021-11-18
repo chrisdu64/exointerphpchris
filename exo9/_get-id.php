@@ -1,6 +1,6 @@
 <?php
 
-$id = $_GET['id'];
+$id = htmlspecialchars(trim($_GET['id']));
 
 
 $viewLignes = "SELECT * from lignes WHERE lign_id = :lign_id";
