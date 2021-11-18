@@ -32,7 +32,7 @@ foreach($lignes as $ligne){
         <p>Terminus B de la ligne : <?php echo $ligne['terminus2'];?>.</p>
         <hr>        
         <div class="d-flex justify-content-between">
-        <a href="modifier-lignes.php" class="btn btn-success ">Modifier la ligne</a>            
+        <a href="../exo9/index.php?id=<?php echo $ligne['lign_id'];?>" class="btn btn-success ">Modifier la ligne</a>            
         <a href="suppr-lignes.php" class="btn btn-info ">Supprimer la ligne</a>
         </div>     
   </div>

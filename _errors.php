@@ -18,6 +18,10 @@ if (isset($_GET["error"])) {
         $type = "warning";
         $message = "Attention contactez votre administrateur une grave erreur est survenue";
     }
+    if ($_GET['error'] == "noId") {
+        $type = "warning";
+        $message = "Pas d'id pour la suite";
+    }
 }
 if (isset($_GET['success'])) {
     $alert = true;
@@ -28,6 +32,10 @@ if (isset($_GET['success'])) {
     if ($_GET['success'] == "addedLigne") {
         $type = 'success';
         $message = 'Nouvelle ligne créée';
+    }
+    if ($_GET['success'] == "modif") {
+        $type = 'success';
+        $message = 'Modification effectuée';
     }
   }
 
