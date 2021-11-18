@@ -25,7 +25,7 @@ include_once "../_errors-messages.php";
 foreach($lignes as $ligne){
 ?>
 <div class="card m-4" style="width:30%">
-    <div class="card-body">
+    <div class="card-body ">
         <h3 class="card-title">Ligne : <?php echo $ligne['lign'];?> .</h3>                
         <p class="text-bold">Description :</p>
         <p>Terminus A de la ligne : <?php echo $ligne['terminus1']; ?>.</p>
@@ -36,6 +36,7 @@ foreach($lignes as $ligne){
         <a href="suppr-lignes.php" class="btn btn-info ">Supprimer la ligne</a>
         </div>     
   </div>
+</div>
 
 
 <?php
