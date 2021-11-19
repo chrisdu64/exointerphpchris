@@ -37,6 +37,10 @@ if (isset($_GET['success'])) {
         $type = 'success';
         $message = 'Modification effectuée';
     }
+    if ($_GET['success'] == "delete") {
+        $type = 'success';
+        $message = 'Ligne supprimée';
+    }
   }
 
 

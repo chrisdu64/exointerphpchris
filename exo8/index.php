@@ -33,7 +33,8 @@ foreach($lignes as $ligne){
         <hr>        
         <div class="d-flex justify-content-between">
         <a href="../exo9/index.php?id=<?php echo $ligne['lign_id'];?>" class="btn btn-success ">Modifier la ligne</a>            
-        <a href="suppr-lignes.php" class="btn btn-info ">Supprimer la ligne</a>
+        <a href="../exo10/index.php?id=<?php echo $ligne['lign_id'];?>" class="btn btn-info ">Supprimer la ligne</a>
+        
         </div>     
   </div>
 </div>
