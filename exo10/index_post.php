@@ -7,7 +7,7 @@ require "../exo7/connexion.php";
 
 $getId = explode('=', $_SERVER['HTTP_REFERER'])[1];
 
-
+ 
 
 if (!($getId == $_POST['id'])) {
     header("Location:../exo8/index.php?id=$getId&error=malformedInput");
